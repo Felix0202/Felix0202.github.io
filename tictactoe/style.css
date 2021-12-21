@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    font-family: "Chalkduster";
+}
+
+body{
+    background-color: #2f2f2f;
+    color: white;
+}
+
+h2{
+    font-size: 3em;
+}
+
+.info{
+    width: 50vw;
+}
+
+.matrix {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1vw;
+    width: 30vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.matrixElement > button{
+    width: 8vw;
+    height: 8vw;
+}
+
+#playerState{
+    text-align: center;
+    font-size: 5vh;
+    height: 16vh;
+    padding-bottom: 2vh;
+}
+
+#playerState > p {
+    margin: 0;
+    padding-bottom: 0.5vh;
+}
+
+#stats{
+    text-align: center;
+}
+
+.input{
+    text-align: center;
+}

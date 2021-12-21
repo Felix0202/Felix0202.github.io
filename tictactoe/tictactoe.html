@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./tictactoe.js" defer></script>
+</head>
+<body>
+<h1 style="text-align: center">Tic Tac Toe</h1>
+
+<div style="display: flex">
+    <div class="info">
+        <div id="playerState"><p>Spieler 1 (X) ist dran</p></div>
+        <br>
+        <div id="stats"></div>
+
+        <div class="input">
+            <input type="text" placeholder="Name Player 1" id="namePlayer1">
+            <button type="submit" onclick="changeName1()">Submit</button>
+        </div>
+        <div class="input">
+            <input type="text" placeholder="Name Player 2" id="namePlayer2">
+            <button type="submit" onclick="changeName2()">Submit</button>
+        </div>
+    </div>
+
+
+    <div class="matrix">
+        <div class="matrixElement">
+            <button onclick="settingItem(0,0)" id="00"></button>
+        </div>
+        <div class="matrixElement">
+            <button onclick="settingItem(0,1)" id="01"></button>
+        </div>
+        <div class="matrixElement">
+            <button onclick="settingItem(0,2)" id="02"></button>
+        </div>
+        <div class="matrixElement">
+            <button onclick="settingItem(1,0)" id="10"></button>
+        </div>
+        <div class="matrixElement">
+            <button onclick="settingItem(1,1)" id="11"></button>
+        </div>
+        <div class="matrixElement">
+            <button onclick="settingItem(1,2)" id="12"></button>
+        </div>
+        <div class="matrixElement">
+            <button onclick="settingItem(2,0)" id="20"></button>
+        </div>
+        <div class="matrixElement">
+            <button onclick="settingItem(2,1)" id="21"></button>
+        </div>
+        <div class="matrixElement">
+            <button onclick="settingItem(2,2)" id="22"></button>
+        </div>
+
+    </div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #486286;
+    color: white;
+}
+
+img{
+    width: 50px;
+}
+
+#output1, #output2{
+    display: flex;
+}
+
+#winner_img{
+    padding-left: 10px;
+}
+
+#winner_img > img{
+    border: 5px green solid;
+}
+
+#loser_img{
+    margin-left: 10px;
+    opacity: 80%;
+}
+
+#winner{
+    color: green;
+}
+
+#loser{
+    color: red;
+}
+
+#button_new, #button_1, #button_2{
+    text-align: center;
+    margin-bottom: 1%;
+    padding: 0;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.player{
+    width: 25vw;
+    border: 1px black solid;
+}
+
+.input{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.input > div {
+    display: flex;
+    width: 25vw;
+}
+
+#input_Player1, #input_Player2{
+    width: 20vw;
+    border-bottom: 1px black solid;
+}
+
+#color_Player1, #color_Player2{
+    width: 20vw;
+}
+
+.submit{
+    width: 5vw;
+}
