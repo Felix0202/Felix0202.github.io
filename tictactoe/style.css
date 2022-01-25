@@ -5,7 +5,14 @@
 
 body{
     background-color: #2f2f2f;
+    width: 100vw;
+    margin: 0;
     color: white;
+    overflow: hidden;
+}
+
+.content{
+    display: flex;
 }
 
 h2{
@@ -48,4 +55,59 @@ h2{
 
 .input{
     text-align: center;
+}
+
+@media screen and (max-width: 1000px){
+    .content{
+        display: block;
+        text-align: center;
+        width: 100vw;
+    }
+    .matrix{
+        margin-top: 3%;
+        width: 50vw;
+        justify-content: space-between;
+        margin-left: 25vw;
+        margin-right: 25vw;
+    }
+    .matrixElement > button{
+        width: 15vw;
+        height: 15vw;
+    }
+    .matrixElement > button > h2 {
+        margin: 0;
+    }
+    .info{
+        width: 80vw;
+        margin: 10vw;
+    }
+    #playerState {
+        font-size: 4vh;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .content{
+        display: block;
+        text-align: center;
+        width: 100vw;
+    }
+    .matrix{
+        margin-top: 3%;
+        width: 50vw;
+        justify-content: space-between;
+        margin-left: 25vw;
+        margin-right: 25vw;
+    }
+    .matrixElement > button{
+        width: 15vw;
+        height: 15vw;
+    }
+    .matrixElement > button > h2 {
+        margin: 0;
+    }
+    .info{
+        width: 80vw;
+        margin: 10vw;
+    }
 }
